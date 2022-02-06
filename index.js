@@ -56,7 +56,7 @@ client.on("ready", async () => {
 	});
 
 	if (config.get("nukeDumpChannel"))
-		client.channels.cache
+		await client.channels.cache
 			.get(config.get("nukeDumpChannel"))
 			.messages.fetch({ limit: 100 })
 			.then((messages) => {
@@ -64,7 +64,7 @@ client.on("ready", async () => {
 					try {
 						attach = msg.content || msg.attachments.entries().next().value[1].attachment;
 						if (!attach) return;
-						if (payloads.indexOf(attach) == null) return;
+						if (payloads.includes(attach)) return;
 						payloads.push(attach);
 					} catch {
 						return;
@@ -73,8 +73,7 @@ client.on("ready", async () => {
 				config.update("payloads", payloads);
 			});
 
-	console.log(chalk.blueBright(`  > Loaded ${payloads.length} payload(s)`));
-	console.log("");
+	console.log(chalk.blueBright(`  > Loaded ${payloads.length} payload(s)`) + "\n");
 });
 
 client.on("messageReactionAdd", async (reaction, user) => {
