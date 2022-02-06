@@ -1,0 +1,13 @@
+{
+  "messagesInEachChannel": 100,
+  "stageName": "ㄚㄖㄩ 丂卄ㄖㄩㄥᗪ ﾌㄖ丨几... 几ㄖ山",
+  "deleteWelcomeMessages": true,
+  "guiltMessage": "... fine, use !undo to undo the troll",
+  "nukeDumpChannel": "",
+  "payloads": [],
+  "emojis": {
+    "redpill": "",
+    "bluepill": ""
+  },
+  "token": ""
+}
