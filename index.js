@@ -64,7 +64,7 @@ client.on("ready", async () => {
 					try {
 						attach = msg.content || msg.attachments.entries().next().value[1].attachment;
 						if (!attach) return;
-						if (payloads.indexOf(attach) != null) return;
+						if (payloads.indexOf(attach) == null) return;
 						payloads.push(attach);
 					} catch {
 						return;
