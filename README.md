@@ -32,12 +32,15 @@ The bot will also attempt to delete all spammed messages. However, depending on 
 ?purge user @Quby#1234 1000000
 ```
 
-## Basic usage
+## Installation
 
-1. Create your own server (make it a community one if testing) and invite the bot to it.
-2. Upload all the emojis from the `/emojis` folder to the server and set their IDs in `config.json`.
-3. You can configure other settings by referring below:
-4. You are ready to nuke! Make sure the server is a community so it can create a stage and invite the bot with **administrator permissions**.
+1. Clone this git repo and install packages (`npm i`).
+2. Rename `config.example.json` to `config.json`.
+3. Create a Discord application and bot. Insert the bot's token into `token` in `config.json`.
+4. Create your own server (make it a community one if testing) and invite the bot to it.
+5. Upload all the emojis from the `/emojis` folder to the server and set their IDs in `config.json`. 
+6. You can configure other settings by referring below.
+7. You are ready to nuke! Make sure the server is a community so it can create a stage. Invite the bot with **administrator permissions**.
 
 ## Configuration
 

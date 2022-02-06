@@ -13,9 +13,7 @@
 		"axios": "^0.25.0",
 		"chalk": "4.1.2",
 		"discord.js": "^13.6.0",
-		"dotenv": "^16.0.0",
 		"ffmpeg-static": "^4.4.1",
-		"libsodium": "^0.7.9",
 		"nconf": "^0.11.3",
 		"sodium": "^3.0.2"
 	}
