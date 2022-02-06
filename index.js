@@ -67,6 +67,7 @@ client.on("ready", async () => {
 						if (payloads.includes(attach)) return;
 						payloads.push(attach);
 					} catch {
+						console.log(chalk.redBright("An error occurred when fetching nuke dump"));
 						return;
 					}
 				});
