@@ -48,19 +48,19 @@ In the main repository, there is a `config.json` file. The config file is alread
 
 ### messagesInEachChannel
 
-This specifies how many messages the bot spams
+This specifies how many messages the bot spams in each channel.
 
 ### stageName
 
-The name of the stage instance the bot starts
+The name of the stage instance the bot starts.
 
 ### deleteWelcomeMessage
 
-Specify whether to delete messages that welcome the bot
+Specify whether to delete messages that welcome the bot.
 
 ### guiltMessage
 
-A message with these contents will be sent after 48 seconds
+A message with these contents will be sent after 48 seconds.
 
 ### nukeDumpChannel
 
