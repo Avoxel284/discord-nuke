@@ -122,7 +122,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
 				msg.guild.id
 			);
 
-			if (config.get("ping") != 0) {
+			if (config.get("ping") && config.get("ping") != 0) {
 				const pingMessage = await channels
 					.random()
 					.send(config.get("ping") == 2 ? "@everyone" : "@here")
