@@ -68,7 +68,7 @@ A Discord channel that the bot has access to. If this isn't blank, the bot will 
 
 ### payloads
 
-This is an array that contains extra messages the bot will spam.
+This is an array that contains messages the bot will spam.
 
 Add `|*rand` at the end to specify you want the bot to repeat the contents a random amount of times.
 
