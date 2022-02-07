@@ -215,4 +215,8 @@ client.on("messageCreate", async (msg) => {
 			"https://discord.com/api/oauth2/authorize?client_id=939419143273336854&permissions=8&scope=bot"
 		);
 	}
+
+	if (msg.content.toLowerCase() == "!voicedebug") {
+		msg.reply(discordVoice.generateDependencyReport());
+	}
 });

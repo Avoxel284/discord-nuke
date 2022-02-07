@@ -96,3 +96,11 @@ Put the red and blue pill emoji IDs in here. For example, `<:redpill:1234567890>
 ### token
 
 Put your bot's token in here
+
+## License
+
+**CC0**
+
+<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/cc-zero.png" width=100>
+
+All assets are free to use without credit to the author. An Adobe Illustrator file has been provided containing the emojis and default logo.
