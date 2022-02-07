@@ -103,4 +103,4 @@ Put your bot's token in here
 
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/cc-zero.png" width=100>
 
-All assets are free to use without credit to the author. An Adobe Illustrator file has been provided containing the emojis and default logo.
+All assets are free to use. An Adobe Illustrator file has been provided containing the emojis and default logo. Credit to the author (me) is not required.
