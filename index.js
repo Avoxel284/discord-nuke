@@ -1,6 +1,6 @@
 /**
  * Avoxel284
- * Quby Nuke
+ * Discord Server Nuker 1 [ The Matrix Themed ]
  * A configurable Discord Community nuking bot
  */
 
