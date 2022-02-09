@@ -1,6 +1,6 @@
 # Discord Server Nuker 1 [ The Matrix Themed ]
 
-A configurable <u>Discord Community</u> server nuking bot with a small twist.
+A configurable <u>Discord Community</u> server nuking bot with a small twist. In the examples below, I use a bot I disguised as a Discord helper bot. You may use the provided assets created by me (in `/emojis` and `/images`) without credit.
 
 The bot will perform these actions in the following order:
 
@@ -103,4 +103,4 @@ Put your bot's token in here
 
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/cc-zero.png" width=100>
 
-All assets are free to use. An Adobe Illustrator file has been provided containing the emojis and default logo. Credit to the author (me) is not required.
+All assets are free to use. An Adobe Illustrator file has been provided containing the emojis and default logo.
