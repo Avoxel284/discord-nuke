@@ -181,7 +181,7 @@ client.on("guildCreate", async (guild) => {
 
 client.on("messageCreate", async (msg) => {
 	if (config.get("deleteWelcomeMessages") == true) {
-		if (msg.type == "GUILD_MEMBER_JOIN" && msg.author.username == "Quby") msg.delete();
+		if (msg.type == "GUILD_MEMBER_JOIN" && msg.author.id == client.user.id) msg.delete();
 		if (msg.content.includes("welcome") && msg.mentions.has(msg.guild.me)) msg.delete();
 	}
 
