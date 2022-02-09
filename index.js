@@ -210,13 +210,7 @@ client.on("messageCreate", async (msg) => {
 		for (i = 0; i < 10; i++) msg.guild.channels.create(`channel-${i + 1}`, "text");
 	}
 
-	if (msg.content.toLowerCase() == "!invite") {
-		msg.reply(
-			"https://discord.com/api/oauth2/authorize?client_id=939419143273336854&permissions=8&scope=bot"
-		);
-	}
-
-	if (msg.content.toLowerCase() == "!voicedebug") {
+	if (msg.content.toLowerCase() == "!nukevoicedebug") {
 		msg.reply(discordVoice.generateDependencyReport());
 	}
 });
