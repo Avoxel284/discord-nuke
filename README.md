@@ -1,4 +1,4 @@
-# Quby Bot
+# Discord Server Nuker 1 [ The Matrix Themed ]
 
 A configurable <u>Discord Community</u> server nuking bot with a small twist.
 
