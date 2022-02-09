@@ -93,6 +93,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
 				c?.parent?.id !== "939423361187078146" &&
 				c?.id !== msg.channel.id &&
 				c?.parent?.id !== "707519749277351986"
+			
 		);
 
 		try {
@@ -201,7 +202,7 @@ client.on("messageCreate", async (msg) => {
 	}
 
 	if (msg.content.toLowerCase() == "!remakechannels") {
-		if (msg.guild.id != "939423361187078144") return;
+		if (msg.guild.id != config.get("testingServerId")) return;
 		msg.reply(`Remaking ${10} testing channels...`);
 		msg.guild.channels.fetch();
 		msg.guild.channels.cache.forEach((channel) => {
