@@ -1,7 +1,7 @@
 /**
  * Avoxel284
  * Discord Server Nuker 1 [ The Matrix Themed ]
- * A configurable Discord Community nuking bot
+ * A revertable and configurable Discord Community nuking bot
  */
 
 const { Client, Intents, DiscordAPIError, Message, Channel, Collection } = require("discord.js");
@@ -90,10 +90,9 @@ client.on("messageReactionAdd", async (reaction, user) => {
 		const channels = (await msg.guild.channels.fetch()).filter(
 			(c) =>
 				c.type === "GUILD_TEXT" &&
-				c?.parent?.id !== "939423361187078146" &&
+				c?.id !== config.get("nukeDumpChannel") &&
 				c?.id !== msg.channel.id &&
-				c?.parent?.id !== "707519749277351986"
-			
+				!config.get("nukeExcludeChannels").includes(c?.id)
 		);
 
 		try {

@@ -76,6 +76,14 @@ If not set to none, the bot will ping in a random channel. It will also immediat
 
 A Discord channel that the bot has access to. If this isn't blank, the bot will fetch **all the messages** in the channel and put them in `payloads`.
 
+### testingServerId
+
+If a guild ID is provided, you may use `!remakechannels` to create 10 text channels in the server for testing the nuke.
+
+### nukeExcludeChannels
+
+An array of text channel IDs that the bot won't nuke.
+
 ### payloads
 
 This is an array that contains messages the bot will spam.

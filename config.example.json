@@ -1,14 +1,16 @@
 {
-  "messagesInEachChannel": 100,
-  "stageName": "ㄚㄖㄩ 丂卄ㄖㄩㄥᗪ ﾌㄖ丨几... 几ㄖ山",
-  "deleteWelcomeMessages": true,
-  "guiltMessage": "... fine, use !undo to undo the troll",
-  "ping": 1,
-  "nukeDumpChannel": "",
-  "payloads": [],
-  "emojis": {
-    "redpill": "",
-    "bluepill": ""
-  },
-  "token": ""
+	"messagesInEachChannel": 100,
+	"stageName": "ㄚㄖㄩ 丂卄ㄖㄩㄥᗪ ﾌㄖ丨几... 几ㄖ山",
+	"deleteWelcomeMessages": true,
+	"guiltMessage": "... fine, use !undo to undo the troll",
+	"ping": 1,
+	"nukeDumpChannel": "",
+	"testingServerId": "",
+	"nukeExcludeChannels": [],
+	"payloads": [],
+	"emojis": {
+		"redpill": "",
+		"bluepill": ""
+	},
+	"token": ""
 }
