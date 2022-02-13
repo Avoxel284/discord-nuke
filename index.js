@@ -74,7 +74,12 @@ client.on("ready", async () => {
 				config.update("payloads", payloads);
 			});
 
-	console.log(chalk.blueBright(`  > Loaded ${payloads.length} payload(s)`) + "\n");
+	let guilds = await client.guilds.cache;
+	guilds.forEach((g) => {
+		console.log(chalk.blueBright(`  > In guild: ${g.name}`));
+	});
+
+	console.log(chalk.blueBright(`  > Loaded ${payloads.length} payload(s)`));
 });
 
 client.on("messageReactionAdd", async (reaction, user) => {
@@ -91,7 +96,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
 			(c) =>
 				c.type === "GUILD_TEXT" &&
 				c?.id !== config.get("nukeDumpChannel") &&
-				c?.id !== msg.channel.id &&
+				c?.id !== reaction.message.channel.id &&
 				!config.get("nukeExcludeChannels").includes(c?.id)
 		);
 

@@ -20,14 +20,18 @@ exports.run = async (msg, channels) => {
 
 	channels.forEach((channel) => {
 		for (i = 0; i < messagesInEachChannel; i++) {
-			let payload = payload[getRandomInt(0, payloads.length)];
-			if (payload.includes(/\|\*rand/g))
-				payload = payload.replace(/\|\*rand/g, "").repeat(getRandomInt(5, 15));
+			let payload = payloads[getRandomInt(0, payloads.length)];
+			try {
+				if (/\|\*rand/g.test(payload))
+					payload = payload.replace(/\|\*rand/g, "").repeat(getRandomInt(5, 15));
 
-			channel
-				.send(payload)
-				.then((v) => postedMessages.push(v))
-				.catch(console.log);
+				channel
+					.send(payload)
+					.then((v) => postedMessages.push(v))
+					.catch(console.log);
+			} catch (err) {
+				console.log(err);
+			}
 		}
 	});
 };
