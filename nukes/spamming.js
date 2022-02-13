@@ -17,6 +17,7 @@ function getRandomInt(min, max) {
  */
 exports.run = async (msg, channels) => {
 	const payloads = config.get("payloads");
+	channels.filter((c) => c.type === "GUILD_TEXT")
 
 	channels.forEach((channel) => {
 		for (i = 0; i < messagesInEachChannel; i++) {
@@ -42,6 +43,8 @@ exports.run = async (msg, channels) => {
  * @param {discord.Collection} channels
  */
 exports.revert = async (guild, channels) => {
+	channels.filter((c) => c.type === "GUILD_TEXT")
+	
 	postedMessages.forEach((msg) => {
 		msg.delete().catch(console.log);
 		postedMessages.splice(i, 1);
