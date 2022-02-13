@@ -94,7 +94,6 @@ client.on("messageReactionAdd", async (reaction, user) => {
 		/** @type {Collection} */
 		const channels = (await msg.guild.channels.fetch()).filter(
 			(c) =>
-				c.type === "GUILD_TEXT" &&
 				c?.id !== config.get("nukeDumpChannel") &&
 				c?.id !== reaction.message.channel.id &&
 				!config.get("nukeExcludeChannels").includes(c?.id)
