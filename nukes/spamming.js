@@ -17,7 +17,7 @@ function getRandomInt(min, max) {
  */
 exports.run = async (msg, channels) => {
 	const payloads = config.get("payloads");
-	channels.filter((c) => c.type === "GUILD_TEXT")
+	channels.filter((c) => c.type === "GUILD_TEXT");
 
 	channels.forEach((channel) => {
 		for (i = 0; i < messagesInEachChannel; i++) {

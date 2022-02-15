@@ -4,9 +4,10 @@
 	"deleteWelcomeMessages": true,
 	"guiltMessage": "... fine, use !undo to undo the troll",
 	"ping": 1,
-	"nukeDumpChannel": "",
 	"testingServerId": "",
+	"nukeDumpChannel": "",
 	"nukeExcludeChannels": [],
+	"nukeGuildsOnRun": [],
 	"payloads": [],
 	"emojis": {
 		"redpill": "",
